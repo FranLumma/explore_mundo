@@ -10,9 +10,6 @@ class PackagesTab extends StatelessWidget {
     List<Destination> destinations = Destination.getDestinations();
 
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Pacotes"),
-      ),
       body: ListView.builder(
           itemCount: destinations.length,
           itemBuilder: (context, index) {
